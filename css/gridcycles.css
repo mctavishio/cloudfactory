@@ -12,8 +12,8 @@
 	--warmlightgray: #656560; /*rgba(101, 101, 96, 1)*/
 	--white: #ffffff;
 	--warmwhite: #fcfbe3; /*rgba(252, 251, 227, 1)*/
-	--veilwarmwhite: rgba(252, 251, 227, 0.4);
-	--veilwarmblack: rgba(25, 25, 24, 0.4);
+	--veilwarmwhite: rgba(252, 251, 227, 0.6);
+	--veilwarmblack: rgba(25, 25, 24, 0.6);
 	/*numbers :: set these to random numbers in code*/
 	--n0: 0;
 	--n1: 1;
