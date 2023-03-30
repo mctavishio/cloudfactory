@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>cloud factory</title>
+	<title>cloud factory: notes</title>
 	<meta charset="utf-8"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1"/>
-	<meta name="description" content="mctavish ::: cloud factory - the covid years" />
+	<meta name="description" content="mctavish ::: cloud factory - the covid years: notes" />
 	<meta name="keywords" content="mctavish net.art covid years cloud work grids grid msab forms form structure scores network cycle generative algorithmic code electronic literature" />
 	<meta name="author" content="kathy mctavish">
 	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -15,10 +15,10 @@
 		{
 			"@context": "http://schema.org",
 			"@type": "WebPage",
-			"name": "cloud factory ::: home",
+			"name": "cloud factory ::: notes",
 			"breadcrumb": "cloud factory",
-          		"url": "http://cloudfactory.work/index.html",
-			"description": "the covid years: cloud work",
+          		"url": "http://cloudfactory.work/notes.html",
+			"description": "the covid years: cloud work: notes",
 			"datePublished": "2023-03-28",
           		"image": "https://www.mctavish.io/apple-touch-icon.png",
 			"author": "https://mctavish.io",
@@ -34,7 +34,7 @@
 			background-color: var(--warmwhite);
 		}
 		.grid_absolute_4x4_rect  > div.griditem:nth-child(3n+2) {
-			background-color: var(--blue);
+			background-color: var(--warmgray);
 		}
 		.grid_absolute_4x4_circle > div.griditem:nth-child(3n+1) {
 			background-color: var(--warmblack);
@@ -43,7 +43,7 @@
 			background-color: var(--warmwhite);
 		}
 		.grid_absolute_4x4_circle  > div.griditem:nth-child(3n) {
-			background-color: var(--blue);
+			background-color: var(--red);
 		}
 		.grid_absolute_4x4_square > div.griditem:nth-child(3n+2) {
 			background-color: var(--warmblack);
@@ -52,7 +52,7 @@
 			background-color: var(--warmwhite);
 		}
 		.grid_absolute_4x4_square  > div.griditem:nth-child(3n+1) {
-			background-color: var(--blue);
+			background-color: var(--red);
 		}
 		
 		.tcontainer {
@@ -88,7 +88,7 @@
 		}
 		.tickermove:nth-child(4n+1) {
 			animation-delay: 4s;
-			color: var(--blue);
+			color: var(--red);
 		}
 		.tickermove:nth-child(4n+2) {
 			animation-delay: 8s;
@@ -96,7 +96,7 @@
 		}
 		.tickermove:nth-child(4n+3) {
 			animation-delay: 12s;
-			color: var(--blue);
+			color: var(--warmgray);
 		}
 		.tickeritem {
 			display: inline-block;
@@ -162,14 +162,14 @@
 <main id="main">
 <header>
 	<h1>cloud factory</h1>
-	<h2>the covid years</h2>
+	<h2>notes</h2>
 </header>
 <nav>
 	<ul class="stanza">
 		<!-- <li><a href="#maincontent" id="skiptomaincontent">skip to main content</a></li> -->
 		<li><a href="https://mctavish.io/index.html" id="homelink">go to mctavish portfolio</a></li>
-		<li><a href="#thanks">thanks</a></li>
 		<li><a href="#dashboard" id="gotodashboard">access dashboard</a></li>
+		<li><a href="index.html">cloud factory home</a></li>
 	</ul>
 </nav>
 
@@ -179,24 +179,11 @@
 
 <article id="maincontent">
 	<header>
-		<h1>. . .</h1>
+		<h1>access: intent</h1>
 	</header>
 	<p>such a long long time ...</p>
-	<p>it was</p>
 	<p>
-a wandering ::: an absence ::: 
-an electric spider's lament.
 	</p>
-	<p>
-	cloud island
-	</p>
-	<ul class="stanza">
-		<li><a href="https://blueatlas.work">blue atlas: field notes</a></li>
-		<li><a href="https://www.mctavish.io/blueatlas/index.html">blue atlas: v1</a></li>
-		<li><a href="https://filmfactory.work">film factory</a></li>
-		<li><a href="https://soundfactory.work">sound factory</a></li>
-		<li><a href="https://bookfactory.work">book factory</a></li>
-	</ul>
 </article>
 
 <article id="thanks">
@@ -280,7 +267,7 @@ let z = getz();
 
  	( () => {
 		const body = document.querySelector("body");
-		let colors = [["warmblack",4], ["warmwhite",4], ["blue",2], ["warmgray",1]].reduce( (acc, color, j) => {
+		let colors = [["warmblack",4], ["warmwhite",4], ["red",2], ["warmgray",1]].reduce( (acc, color, j) => {
 			Array.prototype.push.apply(acc,[...Array(color[1]).keys()].reduce( (acc2,k) => { acc2.push(color[0]); return acc2 },[]) );
 			return acc;
 		}, []);
