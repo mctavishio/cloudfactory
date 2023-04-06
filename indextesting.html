@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>cloud factory</title>
+	<title>cloud factory: testing</title>
 	<meta charset="utf-8"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1"/>
 	<meta name="description" content="mctavish ::: cloud factory - the covid years" />
@@ -25,36 +25,36 @@
 			"license": "http://creativecommons.org/licenses/by-nc-sa/3.0/us/deed.en_US"
 		}
 	</script>
-	<link rel="stylesheet" href="/css/gridcycles.css"/>
+	<link rel="stylesheet" href="/css/gridcyclessvg.css"/>
 	<style>
-		.grid_absolute_4x4_rect > div.griditem:nth-child(3n) {
-			background-color: var(--warmblack);
+		.grid_absolute_4x4_rect > rect.griditem:nth-child(3n) {
+			fill: var(--warmblack);
 		}
-		.grid_absolute_4x4_rect > div.griditem:nth-child(3n+1) {
-			background-color: var(--warmwhite);
+		.grid_absolute_4x4_rect > rect.griditem:nth-child(3n+1) {
+			fill: var(--warmwhite);
 		}
-		.grid_absolute_4x4_rect  > div.griditem:nth-child(3n+2) {
-			background-color: var(--blue);
+		.grid_absolute_4x4_rect  > rect.griditem:nth-child(3n+2) {
+			fill: var(--blue);
 		}
-		.grid_absolute_4x4_circle > div.griditem:nth-child(3n+1) {
-			background-color: var(--warmblack);
+		.grid_absolute_4x4_circle > circ.griditem:nth-child(3n+1) {
+			fill: var(--warmblack);
 		}
-		.grid_absolute_4x4_circle > div.griditem:nth-child(3n+2) {
-			background-color: var(--warmwhite);
+		.grid_absolute_4x4_circle > circ.griditem:nth-child(3n+2) {
+			fill: var(--warmwhite);
 		}
-		.grid_absolute_4x4_circle  > div.griditem:nth-child(3n) {
-			background-color: var(--blue);
+		.grid_absolute_4x4_circle  > circ.griditem:nth-child(3n) {
+			fill: var(--blue);
 		}
-		.grid_absolute_4x4_square > div.griditem:nth-child(3n+2) {
-			background-color: var(--warmblack);
+		.grid_absolute_4x4_square > rect.griditem:nth-child(3n+2) {
+			fill: var(--warmblack);
 		}
-		.grid_absolute_4x4_square > div.griditem:nth-child(3n) {
-			background-color: var(--warmwhite);
+		.grid_absolute_4x4_square > rect.griditem:nth-child(3n) {
+			fill: var(--warmwhite);
 		}
-		.grid_absolute_4x4_square  > div.griditem:nth-child(3n+1) {
-			background-color: var(--blue);
+		.grid_absolute_4x4_square  > rect.griditem:nth-child(3n+1) {
+			fill: var(--blue);
 		}
-		
+
 		.tcontainer {
 			width:100%;
 			overflow: hidden;
@@ -62,7 +62,7 @@
 		.tickerwrap {
 			width:100%;
 			padding-left:100%;
-			/*background-color: var(--warmgray);*/
+			/*fill: var(--warmgray);*/
 		}
 		@keyframes tickerleft {
 			0% { transform: translate3d(0,0,0); }
@@ -104,33 +104,33 @@
 			padding: 0 2rem;
 		}
 		body {
-			transition: background-color 800ms linear;
+			transition: fill 800ms linear;
 		}
 	</style>
 	
 </head>
 <body id="top" >
 
-<div id="divframe" aria-hidden="true">
-<div id="canvas0" class="grid_absolute_4x4_rect" aria-hidden="true">
-	<div id="l0r0c0" class="griditem"></div><div id="l0r0c1" class="griditem"></div><div id="l0r0c2" class="griditem"></div><div id="l0r0c3" class="griditem"></div>
-	<div id="l0r1c0" class="griditem"></div><div id="l0r1c1" class="griditem"></div><div id="l0r1c2" class="griditem"></div><div id="l0r1c3" class="griditem"></div>
-	<div id="l0r2c0" class="griditem"></div><div id="l0r2c1" class="griditem"></div><div id="l0r2c2" class="griditem"></div><div id="l0r2c3" class="griditem"></div>
-	<div id="l0r3c0" class="griditem"></div><div id="l0r3c1" class="griditem"></div><div id="l0r3c2" class="griditem"></div><div id="l0r3c3" class="griditem"></div>
-</div>
-<div id="canvas1" class="grid_absolute_4x4_square" aria-hidden="true">
-	<div id="l1r0c0" class="griditem"></div><div id="l1r0c1" class="griditem"></div><div id="l1r0c2" class="griditem"></div><div id="l1r0c3" class="griditem"></div>
-	<div id="l1r1c0" class="griditem"></div><div id="l1r1c1" class="griditem"></div><div id="l1r1c2" class="griditem"></div><div id="l1r1c3" class="griditem"></div>
-	<div id="l1r2c0" class="griditem"></div><div id="l1r2c1" class="griditem"></div><div id="l1r2c2" class="griditem"></div><div id="l1r2c3" class="griditem"></div>
-	<div id="l1r3c0" class="griditem"></div><div id="l1r3c1" class="griditem"></div><div id="l1r3c2" class="griditem"></div><div id="l1r3c3" class="griditem"></div>
-</div>
-<div id="canvas2" class="grid_absolute_4x4_circle" aria-hidden="true">
-	<div id="l1r0c0" class="griditem"></div><div id="l1r0c1" class="griditem"></div><div id="l1r0c2" class="griditem"></div><div id="l1r0c3" class="griditem"></div>
-	<div id="l1r1c0" class="griditem"></div><div id="l1r1c1" class="griditem"></div><div id="l1r1c2" class="griditem"></div><div id="l1r1c3" class="griditem"></div>
-	<div id="l1r2c0" class="griditem"></div><div id="l1r2c1" class="griditem"></div><div id="l1r2c2" class="griditem"></div><div id="l1r2c3" class="griditem"></div>
-	<div id="l1r3c0" class="griditem"></div><div id="l1r3c1" class="griditem"></div><div id="l1r3c2" class="griditem"></div><div id="l1r3c3" class="griditem"></div>
-</div>
-</div> <!-- end div frame -->
+<svg id="divframe" aria-hidden="true">
+<group id="canvas0" class="grid_absolute_4x4_rect" aria-hidden="true">
+	<rect id="l0r0c0" class="griditem"></rect><rect id="l0r0c1" class="griditem"></rect><rect id="l0r0c2" class="griditem"></rect><rect id="l0r0c3" class="griditem"></rect>
+	<rect id="l0r1c0" class="griditem"></rect><rect id="l0r1c1" class="griditem"></rect><rect id="l0r1c2" class="griditem"></rect><rect id="l0r1c3" class="griditem"></rect>
+	<rect id="l0r2c0" class="griditem"></rect><rect id="l0r2c1" class="griditem"></rect><rect id="l0r2c2" class="griditem"></rect><rect id="l0r2c3" class="griditem"></rect>
+	<rect id="l0r3c0" class="griditem"></rect><rect id="l0r3c1" class="griditem"></rect><rect id="l0r3c2" class="griditem"></rect><rect id="l0r3c3" class="griditem"></rect>
+</group>
+<group id="canvas1" class="grid_absolute_4x4_square" aria-hidden="true">
+	<rect id="l1r0c0" class="griditem"></rect><rect id="l1r0c1" class="griditem"></rect><rect id="l1r0c2" class="griditem"></rect><rect id="l1r0c3" class="griditem"></rect>
+	<rect id="l1r1c0" class="griditem"></rect><rect id="l1r1c1" class="griditem"></rect><rect id="l1r1c2" class="griditem"></rect><rect id="l1r1c3" class="griditem"></rect>
+	<rect id="l1r2c0" class="griditem"></rect><rect id="l1r2c1" class="griditem"></rect><rect id="l1r2c2" class="griditem"></rect><rect id="l1r2c3" class="griditem"></rect>
+	<rect id="l1r3c0" class="griditem"></rect><rect id="l1r3c1" class="griditem"></rect><rect id="l1r3c2" class="griditem"></rect><rect id="l1r3c3" class="griditem"></rect>
+</group>
+<group id="canvas2" class="grid_absolute_4x4_circle" aria-hidden="true">
+	<circ id="l1r0c0" class="griditem"></circ><circ id="l1r0c1" class="griditem"></circ><circ id="l1r0c2" class="griditem"></circ><circ id="l1r0c3" class="griditem"></circ>
+	<circ id="l1r1c0" class="griditem"></circ><circ id="l1r1c1" class="griditem"></circ><circ id="l1r1c2" class="griditem"></circ><circ id="l1r1c3" class="griditem"></circ>
+	<circ id="l1r2c0" class="griditem"></circ><circ id="l1r2c1" class="griditem"></circ><circ id="l1r2c2" class="griditem"></circ><circ id="l1r2c3" class="griditem"></circ>
+	<circ id="l1r3c0" class="griditem"></circ><circ id="l1r3c1" class="griditem"></circ><circ id="l1r3c2" class="griditem"></circ><circ id="l1r3c3" class="griditem"></circ>
+</group>
+</svg> <!-- end div frame -->
 
 <div id="subtextframe" aria-hidden="true">
 	<div class="tcontainer">
@@ -189,7 +189,6 @@
 		<li><a href="https://filmfactory.work">film factory</a></li>
 		<li><a href="https://soundfactory.work">sound factory</a></li>
 		<li><a href="https://bookfactory.work">book factory</a></li>
-		<li><a href="https://pigments.work">pigments:::core samples</a></li>
 	</ul>
 </article>
 
@@ -322,6 +321,12 @@ let z = getz();
 			++count; 
 			let scale = " scale("+( (count+1)%20)/20+")";
 			el.style.transform =  scale;   
+			el.style.transform =  scale;   
+			//let pathLength = el.getTotalLength();
+			//console.log(pathLength);
+			//el.style.strokeDasharray = pathLength*z.tools.randominteger(0,100)/100;
+			//el.style.strokeDashoffset = pathLength*z.tools.randominteger(0,100)/100;
+			el.style.borderWidth = z.tools.randominteger(4,9)+"px";
 		}, j*100+2000);
 	});
 
